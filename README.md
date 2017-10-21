@@ -4,7 +4,9 @@ to run execute:
 ```
 git clone git@github.com:ivanaslamov/quake2-docker-linux-intel.git
 cd quake2-docker-linux-intel
+sudo xhost +
 docker-compose up
+sudo xhost -
 ```
 
 then you should see:
