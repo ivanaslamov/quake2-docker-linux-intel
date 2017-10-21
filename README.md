@@ -1,5 +1,3 @@
-# quake2-docker-linux-intel
-a docker container to run Quake II game on linux machine in docker container
+a docker container to run Quake II game on a linux machine
 
-to run: `docker-compose up`
-
+to run execute: `docker-compose up`
