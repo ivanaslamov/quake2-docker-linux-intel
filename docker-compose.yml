@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  game:
+    build: .
+    devices:
+      - "/dev/dri:/dev/dri"
+    volumes:
+      - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
+    networks:
+      - main
+
+networks:
+  main:
