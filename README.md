@@ -1,12 +1,11 @@
 a docker container to run Quake II game on a linux machine
 
-to run execute: 
+to run execute:
 ```
 git clone git@github.com:ivanaslamov/quake2-docker-linux-intel-gpu.git
 cd quake2-docker-linux-intel-gpu
-sudo xhost +
+docker build -t quake2 .
 docker-compose up
-sudo xhost -
 ```
 
 then you should see:

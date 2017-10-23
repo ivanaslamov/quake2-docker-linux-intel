@@ -1,12 +1,15 @@
 version: "3"
 
 services:
-  game:
-    build: .
+  quake2:
+    image: quake2
     devices:
       - "/dev/dri:/dev/dri"
+      - "/dev/snd:/dev/snd"
     volumes:
       - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
+      - "/run/user/1000/pulse:/run/pulse:ro"
+      - "./.yq2:/home/game/.yq2"
     networks:
       - main
 
