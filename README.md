@@ -1,4 +1,4 @@
-a docker container to run Quake II game on a linux machine
+a docker container to run Quake II demo game on a linux machine
 
 to run execute:
 ```
